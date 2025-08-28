@@ -2,16 +2,3 @@
 .DS_Store
 *.tsbuildinfo
 
-# Ignore all dotfiles except for important docs
-.*
-!.npmignore
-!README.md
-!LICENSE.md
-
-# Ignore TypeScript + maps
-dist/**/*.d.ts
-dist/**/*.map
-dist/**/*.tsbuildinfo
-
-# Ignore extra markdown in dist
-dist/**/*.md

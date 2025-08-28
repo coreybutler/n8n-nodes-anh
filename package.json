@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-anh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send notifications via Azure Notification Hubs",
   "keywords": [
     "n8n-anh",
@@ -36,10 +36,7 @@
     "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
   },
   "files": [
-    "dist/**/*.js",
-    "dist/**/*.svg",
-    "README.md",
-    "LICENSE.md"
+    "dist"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
