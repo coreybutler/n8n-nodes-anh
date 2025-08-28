@@ -20,6 +20,7 @@ jobs:
 
       - name: Test
         run: |
+          npm i
           npm run prepublishOnly
 
       - name: Tag
