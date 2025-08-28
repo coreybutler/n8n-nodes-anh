@@ -4,7 +4,11 @@ This is an n8n community node. It lets you use [_Azure Notification Hubs_](https
 
 _Azure Notification Hubs is a cross-platform push notification routing service that lets you send messages from a single backend to millions of devices. It handles platform-specific formatting and supports targeting through tags and templates._
 
+![1756405129315](image/README/1756405129315.png)
+
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
+
+**Table of Contents**
 
 1. [Installation](#installation)
 1. [Operations](#operations)
@@ -24,10 +28,10 @@ This node supports the following `Send` types:
 
 |Send Type|Description|
 |:-|:-|
-|**Audience**|Sends to a specific audience using tags.|
-|**Broadcast**|Sends to all registered devices.|
-|**Direct**|Sends to a specific device handle.|
-|**Scheduled**|Sends at a specified future time.|
+|Audience|Sends to a specific audience using tags.|
+|Broadcast|Sends to all registered devices.|
+|Direct|Sends to a specific device handle.|
+|Scheduled|Sends at a specified future time.|
 
 > **NOTICE**
 > This module only supports raw template notifications at this time.
@@ -42,7 +46,7 @@ To use this node, you need credentials. To acqure credentials, you must:
 1. In the [Azure Portal](https://portal.azure.com/), go to `Notification Hubs` → _select your hub_ → `Overview` → _copy the Hub Name_.
 1. In the [Azure Portal](https://portal.azure.com/), go to `Notification Hubs` → _select your namespace_ → _select your hub_ → `Access Policies` → _copy the connection string_.
 
-> **PERMISSIONS**
+> **PERMISSIONS:**
 > The access policy must have `Manage` and `Send` permissions for this node to work. `Listen` is not required, but will not prevent this node from working.
 
 Once you've acquired Azure Notification Hub credentials, use them to [create a new n8n credential](https://docs.n8n.io/credentials/add-edit-credentials/). Select `Azure Notification Hubs` as the credential type:
