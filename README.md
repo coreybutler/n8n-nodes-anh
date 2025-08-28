@@ -6,13 +6,13 @@ _Azure Notification Hubs is a cross-platform push notification routing service t
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
-[Installation](#installation)
-[Operations](#operations)
-[Credentials](#credentials)
-[Compatibility](#compatibility)
-[Usage](#usage)
-[Resources](#resources)
-[Development](#development)
+1. [Installation](#installation)
+1. [Operations](#operations)
+1. [Credentials](#credentials)
+1. [Compatibility](#compatibility)
+1. [Usage](#usage)
+1. [Resources](#resources)
+1. [Development](#development)
 
 ## Installation
 
@@ -24,10 +24,10 @@ This node supports the following `Send` types:
 
 |Send Type|Description|
 |:-|:-|
-1. **Audience**: Sends to a specific audience using tags.
-1. **Broadcast**: Sends to all registered devices.
-1. **Direct**: Sends to a specific device handle.
-1. **Scheduled**: Sends at a specified future time.
+|**Audience**|Sends to a specific audience using tags.|
+|**Broadcast**|Sends to all registered devices.|
+|**Direct**|Sends to a specific device handle.|
+|**Scheduled**|Sends at a specified future time.|
 
 > **NOTICE**
 > This module only supports raw template notifications at this time.
@@ -47,21 +47,17 @@ To use this node, you need credentials. To acqure credentials, you must:
 
 Once you've acquired Azure Notification Hub credentials, use them to [create a new n8n credential](https://docs.n8n.io/credentials/add-edit-credentials/). Select `Azure Notification Hubs` as the credential type:
 
-![1756392262369](image/README_TEMPLATE/1756392262369.png)
+![1756404686475](image/README/1756404686475.png)
 
 ![1756393042368](image/README_TEMPLATE/1756393042368.png)
-
-https://azure.microsoft.com/en-us/products/notification-hubs
 
 ## Compatibility
 
 This node was written and tested in the following environment:
 
-## core
-
-- n8nVersion: 1.108.1
+- n8n v1.108.1
 - platform: npm
-- nodeJsVersion: 24.0.0
+- Node.js v24.0.0
 - database: sqlite
 - executionMode: regular
 - concurrency: -1
@@ -108,7 +104,7 @@ A successful send will return the following output:
 {
   correlationId,
   trackingId,
-  notificationId, // Only available in Standard and above (not Basic)
+  notificationId, // Only available in Standard and above (not Free/Basic)
   successCount,
   failureCount,
   results,
@@ -134,6 +130,6 @@ Ideally, this node would provide more visual ways to construct notifications for
 
 I am open to PRs that add more support for individual platforms. However; I request that anyone considering this open a discussion or issue to briefly discuss it beforehand. You'll find I'm pretty amenable, but there are a few high level standards to adhere to.
 
-_Ideally_, if anyone from the Azure Notification Hubs team finds this, I would be more than happy to transfer this repo to you. I feel this is a missing piece in the n8n ecosystem, and it would be best to have the team behind it supporting it.
+_Ideally_, **if anyone from the Azure Notification Hubs team finds this, I would be more than happy to transfer this repo to you**. I feel this is a missing piece in the n8n ecosystem, and it would be best to have the team behind it supporting it.
 
-Copyright &copy; 2025, Corey Butler.
+Copyright &copy; 2025, Corey Butler. MIT License.
