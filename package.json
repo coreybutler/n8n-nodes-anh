@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-anh",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Send notifications via Azure Notification Hubs",
   "keywords": [
     "n8n-anh",
